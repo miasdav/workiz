@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="clocks">
+			<div class="clock clock1">
+				<ul>
+					<li class="digit digit1">
+						<div class="bar bar0"></div>
+						<div class="bar bar1"></div>
+						<div class="bar bar2"></div>
+						<div class="bar bar3"></div>
+						<div class="bar bar4"></div>
+						<div class="bar bar5"></div>
+						<div class="bar bar6"></div>
+					</li>
+					<li class="digit digit2">
+						<div class="bar bar0"></div>
+						<div class="bar bar1"></div>
+						<div class="bar bar2"></div>
+						<div class="bar bar3"></div>
+						<div class="bar bar4"></div>
+						<div class="bar bar5"></div>
+						<div class="bar bar6"></div>
+					</li>
+					<li class="separator">:</li>
+					<li class="digit digit3">
+						<div class="bar bar0"></div>
+						<div class="bar bar1"></div>
+						<div class="bar bar2"></div>
+						<div class="bar bar3"></div>
+						<div class="bar bar4"></div>
+						<div class="bar bar5"></div>
+						<div class="bar bar6"></div>
+					</li>
+					<li class="digit digit4">
+						<div class="bar bar0"></div>
+						<div class="bar bar1"></div>
+						<div class="bar bar2"></div>
+						<div class="bar bar3"></div>
+						<div class="bar bar4"></div>
+						<div class="bar bar5"></div>
+						<div class="bar bar6"></div>
+					</li>
+					<li class="digit digit5">
+						<div class="bar bar0"></div>
+						<div class="bar bar1"></div>
+						<div class="bar bar2"></div>
+						<div class="bar bar3"></div>
+						<div class="bar bar4"></div>
+						<div class="bar bar5"></div>
+						<div class="bar bar6"></div>
+					</li>
+					<li class="digit digit6">
+						<div class="bar bar0"></div>
+						<div class="bar bar1"></div>
+						<div class="bar bar2"></div>
+						<div class="bar bar3"></div>
+						<div class="bar bar4"></div>
+						<div class="bar bar5"></div>
+						<div class="bar bar6"></div>
+					</li>
+					<li class="ampm am">AM</li>
+					<li class="ampm pm">PM</li>
+				</ul>
+				<div class="alarmSet hide" id="currentAlarm" onClick="updateAlarm();"></div>   <!-- contains the current alarm -->
+				<div class="alarmText" onClick="setOrResetAlarm();" id="alarmText"></div>      <!-- contains the text of action -->
+				<div class="alarmSet hide" id="alarmSet">                                      <!-- contains the input to set the alarm -->
+					<input type="datetime-local" id="newAlarmInput"><div class="alarmText" onClick="setAlarm();" id="setNewAlarm"> SET</div>
+				</div>
+				<div class="alarmText hide" onClick="cancelAlarm();" id="cancelAlarm">Cancel</div>
+				<div class="alarmText hide" onClick="snoozeAlarm();" id="snoozeAlarm">Snooze</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

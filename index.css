@@ -1,0 +1,129 @@
+body {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  perspective: 1000;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-transform: scale(0.8, 0.8) translate(0, -20px);
+  -moz-transform: scale(0.8, 0.8) translate(0, -20px);
+  transform: scale(0.8, 0.8) translate(0, -20px);
+}
+
+.byline {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.byline a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.clock {
+  width: 700px;
+  height: 370px;
+  border-radius: 10px;
+  background: #000;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 30px;
+  color: #2df;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clock .off {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  opacity: 0.2;
+}
+
+.clock ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.clock ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  top: 30px;  
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  height: 200px;
+}
+
+.clock ul li.ampm {
+  position: absolute;
+  bottom: 160px;
+  right: 50px;
+  height: 10px;
+  width: 30px;
+}
+
+.clock ul li.ampm.pm {
+  top: 208px;
+}
+
+.clock ul li.separator {
+  font-size: 100px;
+  height: 150px;
+  width: 40px;
+  position: relative;
+  top: -42px;
+}
+
+.clock ul li.digit5, .clock ul li.digit6 {
+  position: absolute;
+  left: 570px;
+  -webkit-transform: scale(0.1, 0.1);
+  -moz-transform: scale(0.1, 0.1);
+  transform: scale(0.1, 0.1);
+}
+
+.clock ul li.digit6 {
+  left: 585px;
+}
+
+.clock .bar {
+  position: absolute;
+  border-radius: 10px;
+  border: 8px solid #2df;
+  background: #2df;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.clock .bar0 { left: 20px; top: 5px; width: 60px; height: 0px; }
+.clock .bar1 { left: 5px; top: 20px; width: 0px; height: 60px; }
+.clock .bar2 { left: 95px; top: 20px; width: 0px; height: 60px; }
+.clock .bar3 { left: 20px; top: 95px; width: 60px; height: 0px; }
+.clock .bar4 { left: 5px; top: 110px; width: 0px; height: 60px; }
+.clock .bar5 { left: 95px; top: 110px; width: 0px; height: 60px; }
+.clock .bar6 { left: 20px; top: 185px; width: 60px; height: 0px; }
+
+.clock .bar.off { opacity: 0.2 }
+
+.clock .alarmText {
+  font-size: 2em;
+}
+
+.alarmText:hover {
+  cursor: pointer;
+}
+
+.alarmSet.hide {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.alarmSet.display {
+  display: inline-block;
+}
